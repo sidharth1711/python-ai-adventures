@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Learn Python one comic chapter at a time, from your first program to loops.">
+  <meta name="description" content="Learn Python one comic chapter at a time, from your first program to file handling.">
   <title>Python &amp; AI Adventures | Learn Python with comics</title>
   <link rel="stylesheet" href="style.css">
 </head>
@@ -32,51 +32,69 @@
           <p class="eyebrow">The comic library</p>
           <h2 id="chapters-title">Python chapters</h2>
         </div>
-        <p>Seven chapters are ready to read. Select any comic to open the full-size image.</p>
+        <p>Ten chapters are ready to read. Select any comic to open the full-size image.</p>
       </div>
 
       <div class="chapter-grid">
         <article class="chapter-card">
-          <a class="comic-link" href="chapter-01-python.png" target="_blank" rel="noopener">
+          <a class="comic-link" href="chapter-01-python.png">
             <img src="chapter-01-python.png" alt="Chapter 1 comic: What is Python?" loading="lazy">
           </a>
           <div class="card-caption"><span>Chapter 01</span><h3>What is Python?</h3></div>
         </article>
         <article class="chapter-card">
-          <a class="comic-link" href="chapter-02-variables.png" target="_blank" rel="noopener">
+          <a class="comic-link" href="chapter-02-variables.png">
             <img src="chapter-02-variables.png" alt="Chapter 2 comic about Python variables" loading="lazy">
           </a>
           <div class="card-caption"><span>Chapter 02</span><h3>Variables</h3></div>
         </article>
         <article class="chapter-card">
-          <a class="comic-link" href="chapter-03-data-types.png" target="_blank" rel="noopener">
+          <a class="comic-link" href="chapter-03-data-types.png">
             <img src="chapter-03-data-types.png" alt="Chapter 3 comic about Python data types" loading="lazy">
           </a>
           <div class="card-caption"><span>Chapter 03</span><h3>Data Types</h3></div>
         </article>
         <article class="chapter-card">
-          <a class="comic-link" href="chapter-04-lists.png" target="_blank" rel="noopener">
+          <a class="comic-link" href="chapter-04-lists.png">
             <img src="chapter-04-lists.png" alt="Chapter 4 comic about Python lists" loading="lazy">
           </a>
           <div class="card-caption"><span>Chapter 04</span><h3>Lists</h3></div>
         </article>
         <article class="chapter-card chapter-card-featured">
-          <a class="comic-link" href="chapter-05-dictionaries.png" target="_blank" rel="noopener">
+          <a class="comic-link" href="chapter-05-dictionaries.png">
             <img src="chapter-05-dictionaries.png" alt="Chapter 5 comic explaining Python dictionaries and key-value pairs" loading="lazy">
           </a>
           <div class="card-caption"><span>Chapter 05</span><h3>Dictionaries</h3></div>
         </article>
         <article class="chapter-card">
-          <a class="comic-link" href="chapter-06-If-Else.png" target="_blank" rel="noopener">
+          <a class="comic-link" href="chapter-06-If-Else.png">
             <img src="chapter-06-If-Else.png" alt="Chapter 6 comic about Python if-else statements" loading="lazy">
           </a>
           <div class="card-caption"><span>Chapter 06</span><h3>If-Else Statements</h3></div>
         </article>
         <article class="chapter-card">
-          <a class="comic-link" href="chapter-07-Loops.png" target="_blank" rel="noopener">
+          <a class="comic-link" href="chapter-07-Loops.png">
             <img src="chapter-07-Loops.png" alt="Chapter 7 comic about Python loops" loading="lazy">
           </a>
           <div class="card-caption"><span>Chapter 07</span><h3>Loops</h3></div>
+        </article>
+        <article class="chapter-card">
+          <a class="comic-link" href="chapter-08-functions.png">
+            <img src="chapter-08-functions.png" alt="Chapter 8 comic about Python functions" loading="lazy">
+          </a>
+          <div class="card-caption"><span>Chapter 08</span><h3>Functions</h3></div>
+        </article>
+        <article class="chapter-card">
+          <a class="comic-link" href="chapter-09-modules-packages.png">
+            <img src="chapter-09-modules-packages.png" alt="Chapter 9 comic about Python modules and packages" loading="lazy">
+          </a>
+          <div class="card-caption"><span>Chapter 09</span><h3>Modules &amp; Packages</h3></div>
+        </article>
+        <article class="chapter-card">
+          <a class="comic-link" href="chapter-10-file-handling.png">
+            <img src="chapter-10-file-handling.png" alt="Chapter 10 comic about Python file handling" loading="lazy">
+          </a>
+          <div class="card-caption"><span>Chapter 10</span><h3>File Handling</h3></div>
         </article>
       </div>
     </section>
@@ -96,8 +114,29 @@
     </section>
   </main>
 
+  <dialog class="comic-viewer" aria-labelledby="comic-viewer-title">
+    <div class="comic-viewer-header">
+      <p class="comic-viewer-chapter" id="comic-viewer-chapter"></p>
+      <button class="comic-viewer-close" type="button" aria-label="Close comic viewer">&times;</button>
+    </div>
+    <h2 id="comic-viewer-title"></h2>
+    <div class="comic-viewer-stage">
+      <img class="comic-viewer-image" alt="">
+    </div>
+    <div class="comic-viewer-controls">
+      <button class="comic-viewer-button" type="button" data-viewer-previous>
+        <span aria-hidden="true">&larr;</span> Previous chapter
+      </button>
+      <p class="comic-viewer-count" aria-live="polite"></p>
+      <button class="comic-viewer-button" type="button" data-viewer-next>
+        Next chapter <span aria-hidden="true">&rarr;</span>
+      </button>
+    </div>
+  </dialog>
+
   <footer class="site-footer">
     <p>Python &amp; AI Adventures <span aria-hidden="true">·</span> Learn, build, and keep exploring.</p>
   </footer>
+  <script src="viewer.js" defer></script>
 </body>
 </html>
