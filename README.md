@@ -16,3 +16,7 @@ A comic-based learning series that follows Sid and Py from Python fundamentals t
 | 8 | Functions | [Read the comic](./chapter-08-functions.png) |
 | 9 | Modules & Packages | [Read the comic](./chapter-09-modules-packages.png) |
 | 10 | File Handling | [Read the comic](./chapter-10-file-handling.png) |
+| 11 | Error Handling | [Read the comic](./chapter-11-error-handling.png) |
+| 12 | Working with APIs & Web Data | [Read the comic](./chapter-12-working-with-API-and-web-data.png) |
+| 13 | Web Scraping | [Read the comic](./chapter-13-Web-Scraping.png) |
+| 14 | Excel Automation | [Read the comic](./chapter-14-excel-automation.png) |
